@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <item name="android:buttonStyle">@style/MyButtonStyle</item>
+        <item name="android:editTextStyle">@style/MyEditTexttyle</item>
+    </style>
+
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">#ff252226</item>
+    </style>
+
+    <style name="MyButtonStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="MyEditTexttyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_background</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_main_yellow"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="אנא הזן את פרטי האירוע"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:hint="שם המזמין"
+            style="@style/MyEditTexttyle"
+            android:id="@+id/et_fragment_send_msg_from"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="תוכן ההודעה"
+            android:padding="5dp"
+            android:gravity="top|right"
+            style="@style/MyEditTexttyle"
+            android:minLines="5"
+            android:lines="5"
+            android:id="@+id/et_fragment_send_msg_content"
+            android:layout_below="@+id/et_fragment_send_msg_from"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="שלח"
+            style="@style/MyButtonStyle"
+            android:id="@+id/btn_fragment_send_msg_send"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_fragment_send_msg_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

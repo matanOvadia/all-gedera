@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_main_yellow"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="מלאו את פרטיכם ונמצא עבורכם עבודה"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/textView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:hint="שם מלא"
+                style="@style/MyEditTexttyle"
+                android:id="@+id/et_fragment_send_msg_from"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:hint="טלפון"
+                style="@style/MyEditTexttyle"
+                android:id="@+id/et_fragment_send_msg_content"
+                android:layout_below="@+id/et_fragment_send_msg_from"
+                android:layout_centerHorizontal="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="date"
+                android:hint="תאריך לידה"
+                style="@style/MyEditTexttyle"
+                android:id="@+id/et_fragment_register_born_date"
+                android:layout_below="@+id/et_fragment_send_msg_content"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:hint="אימייל"
+                style="@style/MyEditTexttyle"
+                android:id="@+id/et_fragment_register_email"
+                android:layout_below="@+id/et_fragment_register_born_date"
+                android:layout_centerHorizontal="true" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="עיר מגורים"
+                style="@style/MyEditTexttyle"
+                android:id="@+id/et_auto_fragment_register_city"
+                android:layout_below="@+id/et_fragment_register_email"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:layoutDirection="ltr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="6dp"
+                android:layout_below="@+id/et_auto_fragment_register_city"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp"
+                android:id="@+id/relativeLayout4">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbTakanon"
+                    android:checked="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="read"
+                    android:id="@+id/tv_takanon"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/cbTakanon"
+                    android:layout_toStartOf="@+id/cbTakanon" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="התחלנו בחיפוש"
+                style="@style/MyButtonStyle"
+                android:id="@+id/btn_fragment_register_send"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/relativeLayout4" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

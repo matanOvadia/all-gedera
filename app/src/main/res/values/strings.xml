@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">כל גדרה</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map">Map</string>
+    <string name="press_to_see_more">"לחץ לפרטים נוספים"</string>
+    <string name="title_activity_splash">@string/app_name</string>
+    <string name="title_activity_first_time">FirstTime</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="rashi">ראשי</string>
+    <string name="avodot">עבודות</string>
+    <string name="barim">בארים</string>
+    <string name="amsheh">המשך</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9782958887819474/8153130548</string>
+</resources>

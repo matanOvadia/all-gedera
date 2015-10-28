@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_menu_list_iten_bg_pressed">#fffe8500</color>
+    <color name="color_menu_list_iten_bg">#ffffd100</color>
+    <color name="color_main_yellow">#ffffd100</color>
+</resources>
